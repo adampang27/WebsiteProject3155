@@ -1,90 +1,137 @@
 /* General page styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #C89F2D;
     margin: 0;
     padding: 0;
+    color: #003B2A;
 }
+
 
 /* Header section styling */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background: #046A38;
+    color: #FFFFFF;
+    padding: 20px 0;
     text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
 /* Styling for team logo image */
 .team-logo {
-    width: 150px; /* Adjust the size as needed */
+    width: 120px;
     margin-top: 10px;
 }
 
 /* Menu button styling */
 header nav {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 header nav button {
-    background: #007BFF;
-    color: white;
+    background: #C89F2D; /* Gold Accent */
+    color: #003B2A;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
     cursor: pointer;
-    margin: 0 5px;
+    margin: 0 8px;
+    transition: background-color 0.3s;
 }
 
 header nav button:hover {
-    background: #0056b3;
+    background: #a8821f;
 }
 
 /* Flex container for team bios and vision sections */
 .container {
-    width: 80%;
-    margin: 20px auto;
+    width: 85%;
+    margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* Card styling for individual team bios */
 .card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    background: #FFFFFF;
+    border-left: 6px solid #046A38;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
     padding: 20px;
     flex: 1 1 calc(30% - 40px);
     text-align: center;
-    transition: transform 0.2s;
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
 }
 
-h2 {
-    margin: 0 0 10px;
+.card h2 {
+    color: #046A38;
+    font-size: 1.5em;
+    margin-bottom: 5px;
 }
 
-/* Initially hide bio details */
+.card p {
+    font-size: 1em;
+}
+
+/* Bio reveal section */
 .bio {
     display: none;
-    margin-top: 10px;
-    color: #555;
+    margin-top: 12px;
+    color: #444;
+    font-style: italic;
 }
 
-/* Button styling */
+/* Generic button styling */
 button {
-    background: #007BFF;
-    color: white;
+    background: #C89F2D;
+    color: #003B2A;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 8px 14px;
+    border-radius: 6px;
     cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #a8821f;
+}
+
+/* Vision/Mission section styling */
+#vision {
+    flex-direction: column;
+}
+
+#vision h2, #vision h3 {
+    color: #046A38;
+    margin-bottom: 10px;
+}
+
+#vision p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+#vision ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+#vision li {
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: #003B2A;
 }
